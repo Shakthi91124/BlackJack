@@ -1,0 +1,115 @@
+
+.container-1 {
+    text-align: center;
+    border-right: solid black 1px;
+    border-left: solid black 1px;
+    margin: auto;
+    width: 100%;
+    background-color: black;
+}
+.heading-container, #heading-container2 {
+    background-color: #f2f2f2;
+    padding: 5px;
+}
+.heading, #heading2 {
+    /* padding: 0px 60px ; */
+    font-family: 'Abril Fatface';
+    font-weight: 700;
+    font-size: 40px;
+    border-bottom: solid black 1px;
+}
+.heading2 {
+    font-size: 30px;
+}
+/* Inner Board */
+.container-2 {
+    background-image: url("bg.jpg");
+}
+.board, .buttons, .playerboard, .dealerboard, .table-container {
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 10px;
+    /* border: 1px solid black; */
+}
+.board,
+.buttons{
+    border: 1px solid black;
+}
+.playerboard, .dealerboard{
+    width: 50%;
+    text-align: center;
+}
+.playerboard{
+    border-right: black solid 1px;
+}
+.playercards,
+.dealercards,
+#playercards,
+#dealercards {
+    height: 220px;
+}
+.playercards img, .dealercards img {
+    width: 90px;
+    height: 130px;
+    padding: 5px;
+    margin: 5px;
+}
+.playerscore, .dealerscore {
+    height: 50px;
+}
+h2 {
+    width: 100%;
+}
+.playerscore h2, .dealerscore h2 {
+    display: block;
+    height: 50px;
+    width: 100%;
+}
+#playerscore-{
+    display: inline;
+}
+.board div {
+    width: 50%;
+}
+.hit, .stand, .deal {
+    padding: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 20%;
+}
+.playerboard div, .dealerboard div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.hit{
+    background-color: rgb(248, 88, 88);
+}
+.stand {
+    background-color: yellow;
+}
+.deal {
+    background-color: rgb(38, 192, 38);
+}
+/* Result table */
+.table {
+    font-family: "Trebuchet MS";
+    border-collapse: collapse;
+    width: 50%;
+}
+.table td, .table th{
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+.table th {
+    background-color: rgb(29, 139, 53);
+}
+.table td {
+    background-color: #f2f2f2;
+}
+.table td:hover{
+    background-color: #ddd;
+}
