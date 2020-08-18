@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Internal style sheet -->
+    <link rel="stylesheet" href="static/css/home.css">
+    <!-- Bootstrap stylesheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Abril Fatface' rel='stylesheet'>
+    <title>BlackJack</title>
+</head>
+<body>
+    <div class="container-1"> 
+        <div class="heading-container">
+            <h1 class="heading">-:  Play BlackJack Online  :-</h1>
+        </div>
+        <div class="heading-container2" id="heading-container2">
+            <h1 class="heading2" id="heading2">Lets play!!..</h1>
+        </div>
+
+        <!-- Board -->
+        <div class="container-2">
+            <!-- Cards -->
+            <div class="board">
+                <div class="playerboard" id="playerboard">
+                    <div class="playerscore" id="playerscore">
+
+                    </div>
+                    <!-- <h2>You: 0</h2> -->
+                    <div class="playercards" id="playercards">
+
+                    </div>
+                </div>
+
+                <div class="dealerboard">
+                    <div class="dealerscore" id="dealerscore">
+                    
+                    </div>
+                    <!-- <h2>Dealer: 0</h2> -->
+                    <div class="dealercards" id="dealercards"></div>
+                </div>
+            </div>
+
+            <!-- Button -->
+            <div class="button-container">
+                <div class="buttons">
+                        <button class="hit" onclick="hit()">Hit</button>
+                        <button class="stand" onclick="stand()">Stand</button>
+                        <button class="deal" onclick="history.go();">Deal</button>
+
+                </div>
+            </div>
+        </div>
+        <!-- Results table -->
+        <div class="container-3">
+            <div class="table-container">
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <th>Wins</th>
+                            <th>Draws</th>
+                            <th>Loses</th>
+                        </tr>
+                        <tr>
+                            <td id="wins"> 
+                                <!-- <span>0</span> -->
+                            </td>
+                            <td id="draws">
+                                <!-- <span>0</span> -->
+                            </td>
+                            <td id="loses">
+                                <!-- <span>0</span> -->
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="static/javascript/home.js"></script>
+</body>
+</html>
